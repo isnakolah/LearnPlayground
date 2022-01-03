@@ -1,27 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D4D9368B-A4B7-4C77-9AAA-1785121A501E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "src\Algorithms\Algorithms.csproj", "{243BA735-3A96-4903-A4A7-77E5EA46DBA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "src\Algorithms\Algorithms.csproj", "{243BA735-3A96-4903-A4A7-77E5EA46DBA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "src\Playground\Playground.csproj", "{4954FC0B-C420-40E0-B22E-D35D03AACA05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground", "src\Playground\Playground.csproj", "{4954FC0B-C420-40E0-B22E-D35D03AACA05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "src\School\School.csproj", "{C0565C30-F58D-4DB7-9B45-DE51F24CBDA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "School", "src\School\School.csproj", "{C0565C30-F58D-4DB7-9B45-DE51F24CBDA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8F12585A-44C4-4F99-8421-0AD66765A457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Tests.Unit", "tests\Algorithms.Tests.Unit\Algorithms.Tests.Unit.csproj", "{CEDA57B4-CD07-4730-99BD-5E4D29FFA4B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Tests.Unit", "tests\Algorithms.Tests.Unit\Algorithms.Tests.Unit.csproj", "{CEDA57B4-CD07-4730-99BD-5E4D29FFA4B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66A3D4AA-6918-446B-88AA-B323CCAB5B6D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{243BA735-3A96-4903-A4A7-77E5EA46DBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -41,10 +43,16 @@ Global
 		{CEDA57B4-CD07-4730-99BD-5E4D29FFA4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEDA57B4-CD07-4730-99BD-5E4D29FFA4B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{243BA735-3A96-4903-A4A7-77E5EA46DBA4} = {D4D9368B-A4B7-4C77-9AAA-1785121A501E}
 		{4954FC0B-C420-40E0-B22E-D35D03AACA05} = {D4D9368B-A4B7-4C77-9AAA-1785121A501E}
 		{C0565C30-F58D-4DB7-9B45-DE51F24CBDA9} = {D4D9368B-A4B7-4C77-9AAA-1785121A501E}
 		{CEDA57B4-CD07-4730-99BD-5E4D29FFA4B2} = {8F12585A-44C4-4F99-8421-0AD66765A457}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38503D22-95D5-4B98-AD99-E326D97FBD7A}
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,5 @@
 ﻿using Algorithms.Exceptions;
-using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Algorithms.Tests.Unit")]
 namespace Algorithms.Search;
 
 internal sealed class BinarySearch

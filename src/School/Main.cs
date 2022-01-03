@@ -1,6 +1,6 @@
 ﻿namespace School;
 
-public static class Lobic
+public static class Main
 {
     public static void Run()
     {
