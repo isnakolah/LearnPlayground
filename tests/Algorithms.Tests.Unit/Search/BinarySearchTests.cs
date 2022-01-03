@@ -28,7 +28,7 @@ public class BinarySearchTests
         var result = () => BinarySearch.FindElement(collection, "Test4");
 
         // Assert
-        result.Should().Throw<ItemNotInCollectionException>();
+        result.Should().ThrowExactly<ItemNotInCollectionException>();
     }
 
     [Theory]

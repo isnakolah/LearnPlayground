@@ -1,8 +1,6 @@
-﻿using School;
+﻿namespace School;
 
-namespace Playground;
-
-internal sealed class SchoolLogic
+public static class Lobic
 {
     public static void Run()
     {
