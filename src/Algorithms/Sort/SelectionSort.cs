@@ -9,14 +9,17 @@ internal static class SelectionSort
         if (collection.Count == 0)
             throw new CollectionEmptyException();
 
-        var collectionToUse = collection.ToList();
+        collection = collection.ToList();
+
+        var count = collection.Count;
+
         var sortedCollection = new List<T>();
 
-        for (int i = 0; i < collection.Count; i++)
+        for (int i = 0; i < count; i++)
         {
             var smallestElement = FindSmallest(collection);
 
-            if (collectionToUse.Remove(smallestElement))
+            if (collection.Remove(smallestElement))
                 sortedCollection.Add(smallestElement);
         }
 

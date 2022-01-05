@@ -1,11 +1,9 @@
-﻿using Algorithms.Sort;
-
-namespace Algorithms.Extensions;
+﻿namespace Algorithms.Extensions;
 
 public static class SortExtensions
 {
-    public static ICollection<T> Sort<T>(this ICollection<T> collection) where T : IComparable<T>
+    public static ICollection<T> SelectionSort<T>(this ICollection<T> collection) where T : IComparable<T>
     {
-        return SelectionSort.Sort(collection);
+        return Sort.SelectionSort.Sort(collection);
     }
 }
