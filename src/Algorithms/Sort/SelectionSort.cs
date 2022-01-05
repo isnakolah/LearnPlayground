@@ -28,7 +28,7 @@ internal static class SelectionSort
         var smallestElement = collection.First();
 
         foreach (var item in collection)
-{
+        {
             if (item.CompareTo(smallestElement) == -1)
                 smallestElement = item;
         }
