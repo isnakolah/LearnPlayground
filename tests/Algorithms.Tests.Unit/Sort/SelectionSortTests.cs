@@ -9,13 +9,13 @@ public class SelectionSortTests
     [Theory]
     [InlineData(new string[] { "Abakalwa", "Zion", "Davis", "Anna" }, new string[] { "Abakalwa", "Anna", "Davis", "Zion" })]
     [InlineData(new string[] { "10", "1", "3", "14", "0", "-1" }, new string[] { "-1", "0", "1", "3", "10", "14" })]
-    public void Sort_ShouldReturnSortedCollection_WhenCollectionProvided(string[] collection, string[] _)
+    public void Sort_ShouldReturnSortedCollection_WhenCollectionProvided(string[] collection, string[] expectedResult)
     {
         // Act
         var result = SelectionSort.Sort(collection);
 
         // Assert
-        result.Should().BeInAscendingOrder();
+        result.Should().BeEquivalentTo(expectedResult);
     }
 
     [Theory]
@@ -46,7 +46,7 @@ public class SelectionSortTests
     [Theory]
     [InlineData(new string[] { "Abakalwa", "Zion", "Davis", "Anna" }, "Abakalwa")]
     [InlineData(new string[] { "10", "1", "3", "14", "0", "-1" }, "-1")]
-    public void FindSmallest_ShouldReturnSmallest_WhenCollectionProvided(string[] collection, string expectedResult)
+    public void FindSmallest_ShouldReturnSmallest_WhenStringCollectionProvided(string[] collection, string expectedResult)
     {
         // Act
         var result = SelectionSort.FindSmallest(collection);
