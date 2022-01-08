@@ -1,6 +1,6 @@
 ﻿using Algorithms.Extensions;
 using System.Runtime.CompilerServices;
-using static Algorithms.DivideAndConquer.DivideAndConquerSum;
+using static Algorithms.DivideAndConquer.DivideAndConquer;
 
 [assembly: InternalsVisibleTo("Algorithms.Tests.Unit")]
 namespace Algorithms;
@@ -11,7 +11,7 @@ public static class Main
     {
         var total = Sum(10, 32, 132, 15);
         var noOfItems = NumberOfItems(10, 123, 15);
-        var maxNumber = MaximumNumber(10, 123, 1, 150, 20, 13323, 10, 1305);
+        var maxNumber = Max(10, 123, 1, 150, 20, 13323, 10, 1305);
 
         Console.WriteLine(total);
         Console.WriteLine(noOfItems);
