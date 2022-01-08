@@ -1,10 +1,10 @@
-﻿using Algorithms.Exceptions;
+﻿using Algorithms.Common.Exceptions;
 
-namespace Algorithms.Sort;
+namespace Algorithms;
 
-internal static class SelectionSort
+internal static partial class Sort
 {
-    public static ICollection<T> Sort<T>(ICollection<T> collection) where T : IComparable<T>
+    public static ICollection<T> SelectionSort<T>(ICollection<T> collection) where T : IComparable<T>
     {
         if (collection.Count == 0)
             throw new CollectionEmptyException();

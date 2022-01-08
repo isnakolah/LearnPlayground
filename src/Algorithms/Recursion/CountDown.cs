@@ -1,6 +1,6 @@
-﻿namespace Algorithms.Recursion;
+﻿namespace Algorithms;
 
-internal sealed class Recursion
+internal static partial class Recursion
 {
     internal static void CountDown(int i)
     {

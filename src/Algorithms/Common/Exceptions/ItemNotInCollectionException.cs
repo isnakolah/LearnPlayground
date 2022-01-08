@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Exceptions;
+﻿namespace Algorithms.Common.Exceptions;
 
 internal sealed class ItemNotInCollectionException : Exception
 {

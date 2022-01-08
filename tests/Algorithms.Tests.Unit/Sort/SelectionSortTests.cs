@@ -1,5 +1,5 @@
-﻿using Algorithms.Exceptions;
-using Algorithms.Sort;
+﻿using Algorithms.Common.Exceptions;
+using static Algorithms.Sort;
 
 namespace Algorithms.Tests.Unit.Sort;
 
@@ -12,7 +12,7 @@ public class SelectionSortTests
     public void Sort_ShouldReturnSortedCollection_WhenCollectionProvided(string[] collection, string[] expectedResult)
     {
         // Act
-        var result = SelectionSort.Sort(collection);
+        var result = SelectionSort(collection);
 
         // Assert
         result.Should().BeEquivalentTo(expectedResult);
@@ -24,7 +24,7 @@ public class SelectionSortTests
     public void Sort_ShouldNotThrowError_WhenCollectionProvided(string[] collection, string[] _)
     {
         // Act
-        var result = () => SelectionSort.Sort(collection);
+        var result = () => SelectionSort(collection);
 
         // Assert
         result.Should().NotThrow();
@@ -37,7 +37,7 @@ public class SelectionSortTests
         var collection = Array.Empty<int>();
 
         // Act
-        var result = () => SelectionSort.Sort(collection);
+        var result = () => SelectionSort(collection);
 
         // Assert
         result.Should().ThrowExactly<CollectionEmptyException>();
@@ -49,7 +49,7 @@ public class SelectionSortTests
     public void FindSmallest_ShouldReturnSmallest_WhenStringCollectionProvided(string[] collection, string expectedResult)
     {
         // Act
-        var result = SelectionSort.FindSmallest(collection);
+        var result = FindSmallest(collection);
 
         // Assert
         result.Should().Be(expectedResult);

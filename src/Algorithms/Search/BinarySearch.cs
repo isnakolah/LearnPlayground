@@ -1,10 +1,10 @@
-﻿using Algorithms.Exceptions;
+﻿using Algorithms.Common.Exceptions;
 
-namespace Algorithms.Search;
+namespace Algorithms;
 
-internal sealed class BinarySearch
+internal sealed partial class Search
 {
-    internal static int FindElement<T>(ICollection<T> collection, T item) where T : IComparable<T>
+    internal static int BinarySearch<T>(ICollection<T> collection, T item) where T : IComparable<T>
     {
         if (item is null)
             throw new ArgumentNullException(nameof(item));

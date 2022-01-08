@@ -1,4 +1,4 @@
-﻿namespace Algorithms.DivideAndConquer;
+﻿namespace Algorithms;
 
 internal static partial class DivideAndConquer
 {

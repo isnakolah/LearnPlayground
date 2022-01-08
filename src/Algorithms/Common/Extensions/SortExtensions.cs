@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Extensions;
+﻿namespace Algorithms.Common.Extensions;
 
 public static class SortExtensions
 {

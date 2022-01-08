@@ -1,4 +1,4 @@
-﻿using static Algorithms.DivideAndConquer.DivideAndConquer;
+﻿using static Algorithms.DivideAndConquer;
 
 namespace Algorithms.Tests.Unit.DivideAndConquer;
 
