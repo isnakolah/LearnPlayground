@@ -1,5 +1,5 @@
 ﻿using Algorithms.Exceptions;
-using Algorithms.Search;
+using static Algorithms.Search.BinarySearch;
 
 namespace Algorithms.Tests.Unit.Search;
 
@@ -12,7 +12,7 @@ public class BinarySearchTests
         var collection = new string[] { "Test1", "Test2", "Test3" };
 
         // Act
-        var result = () => BinarySearch.FindElement(collection, null);
+        var result = () => FindElement(collection, null);
 
         // Assert
         result.Should().Throw<ArgumentNullException>().WithParameterName("item");
@@ -25,7 +25,7 @@ public class BinarySearchTests
         var collection = new string[] { "Test1", "Test2", "Test3" };
 
         // Act
-        var result = () => BinarySearch.FindElement(collection, "Test4");
+        var result = () => FindElement(collection, "Test4");
 
         // Assert
         result.Should().ThrowExactly<ItemNotInCollectionException>();
@@ -38,7 +38,7 @@ public class BinarySearchTests
     public void FindElement_ShouldReturnIndex_IfItemExistsInCollection(string[] collection, string item, int expectedIndex)
     {
         // Act 
-        var result = BinarySearch.FindElement(collection, item);
+        var result = FindElement(collection, item);
 
         // Assert
         result.Should().Be(expectedIndex);
@@ -51,7 +51,7 @@ public class BinarySearchTests
         var collection = new string[] { "Test1", "Test2", "Test3" };
 
         // Act 
-        var result = () => BinarySearch.FindElement(collection, "Test2");
+        var result = () => FindElement(collection, "Test2");
 
         // Assert
         result.Should().NotThrow();
