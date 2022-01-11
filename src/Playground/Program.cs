@@ -1,1 +1,1 @@
-﻿Algorithms.Main.Run();
+﻿

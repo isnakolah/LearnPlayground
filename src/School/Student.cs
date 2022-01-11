@@ -4,22 +4,20 @@ public sealed record class Student
 {
     public Student(string firstName, string lastName)
     {
-        FirstName = firstName ?? throw new ArgumentNullException(nameof(firstName));
-        LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));
+        FirstName = firstName;
+        LastName = lastName;
     }
 
-    public Student(string firstName, string lastName, string middleName)
+    public Student(string firstName, string lastName, string middleName) : this(firstName, lastName)
     {
-        FirstName = firstName ?? throw new ArgumentNullException(nameof(firstName));
-        LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));
-        MiddleName = middleName ?? throw new ArgumentNullException(nameof(middleName));
+        MiddleName = middleName;
     }
 
     public Guid ID { get; init; } = Guid.NewGuid();
     public string FirstName { get; init; }
     public string LastName { get; init; }
     public string? MiddleName { get; init; }
-    public ICollection<Subject> Subjects { get; private set; } = new List<Subject>();
+    public ICollection<Subject> Subjects { get; private set; } = default!;
 
     public void AddClass(Subject subject)
     {

@@ -12,7 +12,7 @@ public class BinarySearchTests
         var collection = new string[] { "Test1", "Test2", "Test3" };
 
         // Act
-        var result = () => BinarySearch(collection, null);
+        var result = () => BinarySearch(collection, null!);
 
         // Assert
         result.Should().Throw<ArgumentNullException>().WithParameterName("item");
